@@ -28,3 +28,21 @@ dependencies {
     compile 'org.slf4j:slf4j-api:1.7.13'
     testCompile 'junit:junit:4.12'
 }
+
+/*
+  closure{
+      A closure in Groovy is an open, anonymous, block of code that can take arguments, 
+      return a value and be assigned to a variable. A closure may reference variables 
+      declared in its surrounding scope.
+
+      Ex.
+      def say = { what ->
+          println what
+        }
+       say "Hello World"
+     }
+
+     Or use `it` to not specify variable
+     def say = { println it }
+     say "Hello World"
+*/
