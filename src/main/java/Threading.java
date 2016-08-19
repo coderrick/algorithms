@@ -1,7 +1,7 @@
 /*
  * @author ProgrammingPC, 
  */
-public class Threading {
+public class Threading implements Runnable {
     public boolean someMethod() {
         return true;
     }
