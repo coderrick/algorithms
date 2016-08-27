@@ -3,7 +3,7 @@
  * by 'ProgrammingPC' at '8/3/16 11:49 PM' with Gradle 2.9
  */
 apply plugin: 'java'
-
+apply plugin: 'application'
 // In this section you declare where to find the dependencies of your project
 repositories {
     // Use 'jcenter' for resolving your dependencies.
