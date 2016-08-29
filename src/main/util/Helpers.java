@@ -1,9 +1,17 @@
 import java.util.*;
+
 //Java everything is a pointer accept primitive types.
 //Why should utility classes be final?
 public final class Helpers{
+    //Array
     static int[] a = {1,2,3,4,5,6,7,8,9};
+
+    //ArrayList
     static ArrayList<Integer> al = new ArrayList<Integer>();
+
+    /** Maps **/
+    static TreeMap<Integer, String> tmap = new TreeMap<Integer, String>();//TreeMap
+
     //System.out.println("fdgfgfgf");
 
     private Helpers(ArrayList<Integer> al) {
@@ -15,17 +23,31 @@ public final class Helpers{
 
 
     public static void disInta(int[] input){
-        System.out.println("Array: " + Arrays.toString(input));
+        System.out.println("Array: " + Arrays.toString(input) + "\n");
     }
 
     public static void disInta(ArrayList<Integer> input){
         //input.add(1);
         //input.add(2);
-        System.out.println("ArrayList: " + Arrays.toString(input.toArray()));
+        System.out.println("ArrayList: " + Arrays.toString(input.toArray()) + "\n");
+    }
+
+    public static void disTreeMap(TreeMap<Integer, String> input){
+        tmap.put(1, "Data1");
+        tmap.put(23, "Data2");
+        tmap.put(70, "Data3");
+        tmap.put(4, "Data4");
+        tmap.put(2, "Data5");
+        //Why does the TreeMap need to be inside of a set?
+        Set<Map.Entry<Integer, String>> set = input.entrySet();
+        for (Map.Entry<Integer, String> entry : set) {     
+            System.out.println("Key: " + entry.getKey() + " Value: " + entry.getValue());
+        }
     }
 
     public static void main(String args[]){
         disInta(a);
         disInta(al);
+        disTreeMap(tmap);
     }
 }
