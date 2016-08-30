@@ -11,6 +11,8 @@ public final class Helpers{
 
     /** Maps **/
     static TreeMap<Integer, String> tmap = new TreeMap<Integer, String>();//TreeMap
+    static HashMap<Integer, String> hmap = new HashMap<Integer, String>();//HashMap
+    static LinkedHashMap<Integer, String> lmap = new LinkedHashMap<Integer, String>();//LinkedHashMap
 
     //System.out.println("fdgfgfgf");
 
@@ -33,11 +35,11 @@ public final class Helpers{
     }
 
     public static void disTreeMap(TreeMap<Integer, String> input){
-        tmap.put(1, "Data1");
-        tmap.put(23, "Data2");
-        tmap.put(70, "Data3");
-        tmap.put(4, "Data4");
-        tmap.put(2, "Data5");
+        tmap.put(1, "Data-1");
+        tmap.put(3, "Data-3");
+        tmap.put(2, "Data-2");
+        tmap.put(5, "Data-5");
+        tmap.put(4, "Data-4");
         //Why does the TreeMap need to be inside of a set?
         Set<Map.Entry<Integer, String>> set = input.entrySet();
         for (Map.Entry<Integer, String> entry : set) {     
