@@ -34,6 +34,12 @@ public final class Helpers{
         System.out.println("ArrayList: " + Arrays.toString(input.toArray()) + "\n");
     }
 
+    public static void disInta2(ArrayList<Integer> input){
+        for(Integer i : input){
+            System.out.println("ArrayList: " + i );
+        }
+    }
+
     public static void disTreeMap(TreeMap<Integer, String> input){
         tmap.put(1, "Data-1");
         tmap.put(3, "Data-3");
