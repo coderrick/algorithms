@@ -19,8 +19,8 @@ public final class Helpers{
     private Helpers(ArrayList<Integer> al) {
 	// Utility classes should always be final and have a private constructor
     //Try using this to see if actually adds [1,2] to the arraylist
-    al.add(1);
-    al.add(2);
+    //al.add(1);
+    //al.add(2);
 	}
 
 
@@ -29,14 +29,16 @@ public final class Helpers{
     }
 
     public static void disInta(ArrayList<Integer> input){
-        //input.add(1);
-        //input.add(2);
+        input.add(1);
+        input.add(2);
         System.out.println("ArrayList: " + Arrays.toString(input.toArray()) + "\n");
     }
 
     public static void disInta2(ArrayList<Integer> input){
+        input.add(1);
+        input.add(2);
         for(Integer i : input){
-            System.out.println("ArrayList: " + i );
+            System.out.println("ArrayListI: " + i );
         }
     }
 
@@ -55,7 +57,9 @@ public final class Helpers{
 
     public static void main(String args[]){
         disInta(a);
+        disInta2(al);
         disInta(al);
+        
         disTreeMap(tmap);
     }
 }
