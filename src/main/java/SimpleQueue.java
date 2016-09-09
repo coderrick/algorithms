@@ -32,6 +32,7 @@ public class SimpleQueue {
       queue.push(40);
       queue.push(50);
       queue.push(60);
+      queue.push(70);
       while (!queue.isEmpty()) {
          long value = queue.pop();
          System.out.print(value);
