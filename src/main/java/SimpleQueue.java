@@ -3,16 +3,18 @@
 public class SimpleQueue {
    private int maxSize;
    private long[] queueArray;
-   private int top;
+   private int front;
+   private int back;
    public SimpleQueue(int s) {
       maxSize = s;
       queueArray = new long[maxSize];
       top = -1;
    }
-   public void push(long j) {
+   public void enQueue(long j) {
       queueArray[++top] = j;
    }
-   public long pop() {
+
+   public long deQueue() {
       return queueArray[top--];
    }
    public long peek() {
