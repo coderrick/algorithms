@@ -13,8 +13,8 @@ public class SimpleQueue {
    public void enQueue(long j) {
       queueArray[++top] = j;
    }
-
-   public long deQueue() {
+   
+   public long pop() {
       return queueArray[top--];
    }
    public long peek() {
@@ -33,8 +33,7 @@ public class SimpleQueue {
       queue.push(30);
       queue.push(40);
       queue.push(50);
-      queue.push(60);
-      queue.push(70);
+
       while (!queue.isEmpty()) {
          long value = queue.pop();
          System.out.print(value);
