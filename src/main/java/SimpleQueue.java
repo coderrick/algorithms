@@ -1,4 +1,4 @@
-/* Finish this Class, its not a functioning Queue yet! Remember to add logic*/
+/* Finish this Class, its not a functioning Queue yet! Remember to add logic yeah*/
 
 public class SimpleQueue {
    private int maxSize;
