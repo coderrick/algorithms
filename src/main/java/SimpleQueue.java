@@ -14,7 +14,7 @@ public class SimpleQueue {
       queueArray[++top] = j;
    }
    
-   public long pop() {
+   public long deQueue() {
       return queueArray[top--];
    }
    public long peek() {
