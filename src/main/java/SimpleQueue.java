@@ -1,5 +1,5 @@
 /* Finish this Class, its not a functioning Queue yet! Remember to add logic yeah*/
-
+//TODO
 public class SimpleQueue {
    private int maxSize;
    private long[] queueArray;
