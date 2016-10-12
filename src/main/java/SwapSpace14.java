@@ -8,14 +8,14 @@ EXAMPLE
 Input: "Mr John Smith
 Output: "Mr%20Dohn%20Smith"
 */
-public public class SwapSpace {
+public class SwapSpace14 {
     char[] charArray ={ 'a', 'b', 'c', 'd', 'e' }; 
 
-    public String swapSpace(char[] input) {
-        
+    public String swapSpace(char[] input) {       
         return null;
     }
+
     public static void main(String[] args) {
-        
+        System.out.println("df,jfdkubdfkjfdjkbdf");
     }
 }
