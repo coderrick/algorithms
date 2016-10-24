@@ -61,7 +61,7 @@ public class SampleGetRequest {
  // HTTP Post request
  private void sendingPostRequest() throws Exception {
 
-  //String url = "http://localhost:8080/JAXRSJsonCRUDExample/rest/countries";
+  String url = "http://localhost:8080/JAXRSJsonCRUDExample/rest/countries";
   URL obj = new URL(url);
   HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
