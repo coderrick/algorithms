@@ -20,14 +20,14 @@ public class HttpURLConnectionExample {
   http.sendingGetRequest();
   
     // Sending post request
-  http.sendingPostRequest();
+  //http.sendingPostRequest();
 
  }
 
  // HTTP GET request
  private void sendingGetRequest() throws Exception {
 
-  String urlString = "http://localhost:8080/JAXRSJsonCRUDExample/rest/countries";
+  String urlString = "http://alexaphillyhack.herokuapp.com/api/readings/ ";
   
   URL url = new URL(urlString);
   HttpURLConnection con = (HttpURLConnection) url.openConnection();
@@ -61,7 +61,7 @@ public class HttpURLConnectionExample {
  // HTTP Post request
  private void sendingPostRequest() throws Exception {
 
-  String url = "http://localhost:8080/JAXRSJsonCRUDExample/rest/countries";
+  //String url = "http://localhost:8080/JAXRSJsonCRUDExample/rest/countries";
   URL obj = new URL(url);
   HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
