@@ -8,13 +8,13 @@ import java.net.URL;
 /**
  * @from http://www.java2blog.com/2016/07/how-to-send-http-request-getpost-in-java.html
  */
-public class HttpURLConnectionExample {
+public class SampleGetRequest {
 
  private final String USER_AGENT = "Mozilla/5.0";
 
  public static void main(String[] args) throws Exception {
 
-  HttpURLConnectionExample http = new HttpURLConnectionExample();
+  SampleGetRequest http = new SampleGetRequest();
 
      // Sending get request
   http.sendingGetRequest();
