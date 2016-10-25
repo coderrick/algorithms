@@ -13,20 +13,16 @@ public class SamplePostRequest {
  private final String USER_AGENT = "Mozilla/5.0";
 
  public static void main(String[] args) throws Exception {
-
-  SamplePostRequest http = new SamplePostRequest();
-
-  // Sending post request
-  http.sendingPostRequest();
-
+   SamplePostRequest http = new SamplePostRequest();
+   // Sending post request
+   http.sendingPostRequest();
  }
  
  // HTTP Post request
  private void sendingPostRequest() throws Exception {
-
-  String url = "http://alexaphillyhack.herokuapp.com/api/readings/ ";
-  URL obj = new URL(url);
-  HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+   String url = "http://alexaphillyhack.herokuapp.com/api/readings/ ";
+   URL obj = new URL(url);
+   HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
         // Setting basic post request
   con.setRequestMethod("POST");
