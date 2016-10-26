@@ -16,11 +16,8 @@ public class SampleGetRequest {
 
   SampleGetRequest http = new SampleGetRequest();
 
-     // Sending get request
+  // Sending get request
   http.sendingGetRequest();
-  
-    // Sending post request
-  //http.sendingPostRequest();
 
  }
 
